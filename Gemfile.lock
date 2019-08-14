@@ -1,0 +1,92 @@
+PATH
+  remote: .
+  specs:
+    perfectsched (0.9.0)
+      chrono (~> 0.3.0)
+      perfectqueue (>= 0.8.41, < 1.0)
+      sequel (~> 4.0.0)
+      tzinfo (~> 1.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (5.2.3)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    chrono (0.3.0)
+      activesupport
+    concurrent-ruby (1.1.5)
+    coveralls (0.8.9)
+      json (~> 1.8)
+      rest-client (>= 1.6.8, < 2)
+      simplecov (~> 0.10.0)
+      term-ansicolor (~> 1.3)
+      thor (~> 0.19.1)
+      tins (~> 1.6.0)
+    diff-lcs (1.3)
+    docile (1.1.5)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    i18n (1.5.1)
+      concurrent-ruby (~> 1.0)
+    json (1.8.6)
+    mime-types (2.99.3)
+    minitest (5.11.3)
+    mysql2 (0.3.21)
+    netrc (0.11.0)
+    perfectqueue (0.10.0)
+      sequel (>= 3.48.0)
+    rake (0.9.6)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.4)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
+    sequel (4.0.0)
+    simplecov (0.10.0)
+      docile (~> 1.1.0)
+      json (~> 1.8)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
+    sqlite3 (1.3.13)
+    term-ansicolor (1.7.1)
+      tins (~> 1.0)
+    thor (0.19.4)
+    thread_safe (0.3.6)
+    tins (1.6.0)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  coveralls
+  mysql2 (~> 0.3.20)
+  perfectsched!
+  rake (~> 0.9.2)
+  rspec (~> 3.4.0)
+  simplecov (~> 0.10.0)
+  sqlite3 (~> 1.3.3)
+
+BUNDLED WITH
+   1.16.1
