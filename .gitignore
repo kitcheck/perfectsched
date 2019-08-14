@@ -1,5 +1,4 @@
 .bundle
-Gemfile.lock
 vendor/*
 coverage/*
 pkg/*
