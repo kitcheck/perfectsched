@@ -117,7 +117,10 @@ module PerfectSched
         data['type'] = type
         connect {
           begin
-            n = @db["INSERT INTO `#{@table}` (id, timeout, next_time, cron, delay, data, timezone) VALUES (?, ?, ?, ?, ?, ?, ?);", key, next_run_time, next_time, cron, delay, data.to_json, timezone].insert
+            sql = "INSERT INTO `#{@table}` (id, timeout, next_time, cron, delay, data, timezone, created_at, updated_at)" \
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);"
+            @db[sql, key, next_run_time, next_time, cron, delay, data.to_json, timezone, Time.now.in_time_zone(timezone),
+                Time.now.in_time_zone(timezone)].insert
             return Schedule.new(@client, key)
           rescue Sequel::DatabaseError
             raise IdempotentAlreadyExistsError, "schedule key=#{key} already exists"
