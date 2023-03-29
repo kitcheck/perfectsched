@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    perfectsched (0.10.0)
+    perfectsched (0.11.0)
       chrono (~> 0.3.0)
       perfectqueue (>= 0.8.41, < 1.0)
       sequel (~> 4.0.0)
